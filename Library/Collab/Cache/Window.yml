@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/NextScene.cs
-    - Assets/Scripts/instatiation.cs
+    - Assets/Scenes/Intro Scene 1.unity
+    - Assets/Scenes/Intro Scene 1.unity.meta
+    - ProjectSettings/EditorBuildSettings.asset
     - 
-    m_Values: 010101
+    m_Values: 01010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

@@ -12,7 +12,6 @@ public class instatiation : MonoBehaviour
         screenBounds=Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
     }
 
-
     // Update is called once per frame
     public void zzzzzz()
     {

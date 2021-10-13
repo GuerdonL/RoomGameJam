@@ -36,13 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/NextScene.cs" />
-     <Compile Include="Assets/Scripts/OnInteract.cs" />
-     <Compile Include="Assets/Scripts/Player.cs" />
      <Compile Include="Assets/Scripts/instatiation.cs" />
+     <Compile Include="Assets/Scripts/OnInteract.cs" />
+     <Compile Include="Assets/Scripts/NextScene.cs" />
      <Compile Include="Assets/Scripts/toggleEnable.cs" />
+     <Compile Include="Assets/Scripts/Player.cs" />
      <Compile Include="Assets/Scripts/toggleRender.cs" />
      <Compile Include="Assets/Scripts/OnCollide.cs" />
+     <Compile Include="Assets/EnemyCollision.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/guerdonligon/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
