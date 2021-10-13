@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Transform trans;
-    public Rigidbody2D body;
+    private Transform trans;
+    private Rigidbody2D body;
     public float moveSpeed=5f;
     Vector2 movement;
     // Start is called before the first frame update
-
+    private void Start() {
+        trans=gameObject.transform;
+        body=gameObject.GetComponent<Rigidbody2D>();
+    }
 
 
 
