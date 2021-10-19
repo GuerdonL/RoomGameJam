@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class OnCollide : MonoBehaviour
 {
     public bool isInRange;
-    public KeyCode interactKey;
     public UnityEvent interactAction;
     
     void Start()
@@ -16,11 +15,7 @@ public class OnCollide : MonoBehaviour
   void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-        {
-            isInRange=true;
-            Debug.Log("Player in range of interactable");
-
-       }
+        {isInRange=true;Debug.Log("Player in range of interactable");}
     }
 void OnTriggerExit2D(Collider2D other)
     {
@@ -35,11 +30,12 @@ void OnTriggerExit2D(Collider2D other)
 
     void Update()
     {
-        if(isInRange)
+    if(isInRange)
         {
            
+            {
                 interactAction.Invoke();
-            
+            }
         }
     }
  

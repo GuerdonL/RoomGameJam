@@ -8,6 +8,9 @@ TagManager:
   - enemy
   - Wall
   - bullet
+  - enemybarrier
+  - SwitchBraziers
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - actual
   - Water
   - UI
-  - 
+  - 3d
   - 
   - FogOfWarMain
   - FogOfWarSecondary

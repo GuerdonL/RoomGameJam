@@ -17,6 +17,7 @@ public class BulletController : MonoBehaviour
     private float remainingDelay = 0;
     private List<Bullet> bullets = new List<Bullet>();
 
+    public GameObject aimer;
 
     private void Start() 
     {
@@ -49,7 +50,7 @@ public class BulletController : MonoBehaviour
 
     public void Fire()
     {
-        float rot = Mathf.Deg2Rad*gameObject.transform.eulerAngles.z;
+        float rot = Mathf.Deg2Rad*aimer.transform.eulerAngles.z;
 
         for(int i = 1; i <= bulletNum; i++){
             Bullet temp = new Bullet();
@@ -64,7 +65,7 @@ public class BulletController : MonoBehaviour
             temp.dirVel = bulletSpeed * worldDirectionBullet;
             temp.fallOffVector = temp.dirVel * fallOff;
             temp.maxTimePersistence = this.maxTimePersistence;
-            temp.bullet = (GameObject) Instantiate(bulletPrefab, gameObject.transform.position, Quaternion.identity);
+            temp.bullet = (GameObject) Instantiate(bulletPrefab, aimer.transform.position, Quaternion.Euler(new Vector3(0,0,Mathf.Rad2Deg*(localAngle+rot)+70)));
 
 
             bullets.Add(temp);

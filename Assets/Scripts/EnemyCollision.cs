@@ -8,11 +8,10 @@ public class EnemyCollision : MonoBehaviour
     {
        if (other.CompareTag("Player"))
         {
-            if (other.gameObject.GetComponent<IsInvincible>().isInvincible){
-                gameObject.SetActive(false);
-            } else{
-            other.gameObject.SetActive(false);
-            }
+            other.gameObject.SetActive(false);//decrement player health
         }
+        else if(other.CompareTag("bullet")){
+            gameObject.SetActive(false);//decrement enemy health
+        };
     }
 }

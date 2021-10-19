@@ -5,20 +5,28 @@ using UnityEngine.Events;
 
 public class OnInteract : MonoBehaviour
 {
+    public GameObject pressE;
+    public List<GameObject> dialogue;
     public bool isInRange;
     public KeyCode interactKey;
     public UnityEvent interactAction;
+    private int index = 0;
     
     void Start()
     {
-
+        pressE.SetActive(false);
+        foreach (GameObject go in dialogue){
+            go.SetActive(false);
+        }
     }
   void OnTriggerEnter2D(Collider2D other)
     {
+        //Debug.Log("but triggered");
         if (other.CompareTag("Player"))
         {
             isInRange=true;
-            Debug.Log("Player in range of interactable");
+            pressE.SetActive(true);
+            //Debug.Log("Player in range of interactable");
 
        }
     }
@@ -27,7 +35,8 @@ void OnTriggerExit2D(Collider2D other)
        if (other.CompareTag("Player"))
         {
             isInRange=false;
-            Debug.Log("Player not in range");
+            pressE.SetActive(false);
+            //Debug.Log("Player not in range");
 
         }
     }
@@ -37,9 +46,14 @@ void OnTriggerExit2D(Collider2D other)
     {
         if(isInRange)
         {
-            if(Input.GetKeyDown(interactKey))
+            if(Input.anyKeyDown)
             {
-                interactAction.Invoke();
+                if(dialogue.Count!=0 && dialogue.Count != index){
+                    dialogue[index].SetActive(true);
+                    index++;
+                } else if (Input.GetKeyDown(interactKey)){
+                    interactAction.Invoke();
+                }
             }
         }
     }

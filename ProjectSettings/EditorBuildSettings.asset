@@ -6,30 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SceneTest.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/Used Scenes/Menu.unity
     guid: 923c9207820cfb14289aac0a1425bd35
   - enabled: 1
-    path: Assets/Scenes/BedroomScene.unity
-    guid: bdcf0628530cf7f46a422fef85492d21
-  - enabled: 1
-    path: Assets/Scenes/Livingroom.unity
-    guid: 9742d821a3d338f44a0d3ac2391c9809
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Intro Scene.unity
+    path: Assets/Scenes/Used Scenes/Intro Scene.unity
     guid: e6f08a9164bf269a3a6436b8b2cad75f
   - enabled: 1
-    path: Assets/Scenes/Intro Scene.unity
-    guid: e6f08a9164bf269a3a6436b8b2cad75f
+    path: Assets/Scenes/Used Scenes/TilemapPuzzle.unity
+    guid: cbbc96014d2c7f991bd08a4146269ac2
   - enabled: 1
-    path: Assets/Scenes/BedroomScene.unity
-    guid: c90e0545372fc6d4781fb1a06cf6eed4
-  - enabled: 0
-    path: Assets/Scenes/Intro Scene 1.unity
-    guid: 81740bff50b577964956ee945a082abd
+    path: Assets/Scenes/Used Scenes/BossArena.unity
+    guid: 278f7bd53281ac220b80f2da1ef7c2a2
   m_configObjects: {}
